@@ -208,11 +208,61 @@ main{
     flex-wrap:wrap;
 }
 
-.line-evidenza{
+.line-evidenza {
     color: #adff2f; 
     margin: 5px 28px 0 28px ;
    
 }
+
+.recent-album{
+    padding-left: 20px;
+    padding-right: 35px;
+
+}
+
+.title-recent{
+    padding: 40px 0 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.blocco{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+.blocco img {
+    width: 100%;
+}
+
+.container-img-main{
+    display: flex;
+    gap: 30px;
+
+}
+
+.tit-album{
+    padding: 20px 0 10px 0;
+    font-size: 16px;
+}
+
+.title-album a {
+    color: white;
+}
+
+.subtitle{
+    font-size: 12px;
+    color:#808080 ;
+}
+
+
+
+
+
+
 
 
 
@@ -275,6 +325,18 @@ main{
     RESPONSIVE
 ----------------- */
 @media screen and (max-width: 992px) {
+    .container-img-main{
+        flex-wrap: wrap; 
+         
+    }
+
+    .blocco{
+        width: calc(100% / 4 - 15px);
+    }
+
+    .recent-album{
+        padding-right: 0;
+    }
 
 }
 
@@ -289,6 +351,13 @@ main{
         width: ((100% - 28px) / 4);
     }
     
+    .blocco{
+        width: calc(100% / 2 - 15px);
+    }
+
+    .recent-album{
+        padding-right: 0;
+    }
 
 }
 
