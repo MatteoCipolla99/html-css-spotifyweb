@@ -165,6 +165,10 @@ main{
     background-color: #141922;
     height: 100vh;
     width: 100%;
+    overflow-y: auto;
+    padding-bottom: 90px;
+    padding-left: 230px;
+    
 }
 
 .main-top{
@@ -175,8 +179,40 @@ main{
     right: 0;
     left: 230px;
     z-index: 1;
+    text-align: end;
 }
 
+.btn{
+    background-color: #080b12;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin: 20px 25px;
+    font-size: 12px;
+    cursor: pointer;      
+}
+
+.main-container{
+    margin:0;
+    margin-top: 25px;
+    padding-top: 90px;
+}
+
+.list-flex{
+    display: flex;
+    justify-content: center;
+    color: #7d7f84;
+    gap: 27px;
+    font-size: 12px;
+    flex-wrap:wrap;
+}
+
+.line-evidenza{
+    color: #adff2f; 
+    margin: 5px 28px 0 28px ;
+   
+}
 
 
 
@@ -204,7 +240,7 @@ main{
      FOOTER
 ---------------*/
 
-.container-foot {
+/* .container-foot {
     display: flex;
     height: 90px;
     background-color: #282828;
@@ -212,7 +248,7 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 100; */
 }
 
 
@@ -247,6 +283,12 @@ main{
 
 
 @media screen and (max-width: 768px) {
+    
+    .list-flex{
+        flex-wrap: wrap;
+        width: ((100% - 28px) / 4);
+    }
+    
 
 }
 
