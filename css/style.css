@@ -455,6 +455,29 @@ main{
     font-size: 13px;
 }
 
+/*---------------
+      HOVER
+----------------- */
+
+a:hover{
+    color: #fff;
+}
+
+.name-brano:hover{
+color: #fff;
+text-decoration: underline;
+cursor: pointer;
+
+}
+
+.progress-bar:hover .progress{
+    background-color: #adff2f;
+}
+
+.progress-volume-bar:hover .progress-volume{
+    background-color: #adff2f;
+}
+
 
 /*---------------
     RESPONSIVE
@@ -603,28 +626,4 @@ main{
     .foot-right{
         gap: 6px;
     }
-}
-
-
-/*---------------
-      HOVER
------------------ */
-
-a:hover{
-    color: #fff;
-}
-
-.name-brano:hover{
-color: #fff;
-text-decoration: underline;
-cursor: pointer;
-
-}
-
-.progress-bar:hover .progress{
-    background-color: #adff2f;
-}
-
-.progress-volume-bar:hover .progress-volume{
-    background-color: #adff2f;
 }
