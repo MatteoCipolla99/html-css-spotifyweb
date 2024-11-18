@@ -55,7 +55,6 @@ a{
     flex-direction: column;
 }
 
-
 /*---------------
     HEADER
 ---------------- */
@@ -159,17 +158,6 @@ a{
     margin-bottom: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*-------------
      MAIN
 ---------------*/
@@ -267,8 +255,6 @@ main{
     color: white;
 }
 
-
-
 .subtitle{
     font-size: 12px;
     color:#808080 ;
@@ -301,11 +287,6 @@ main{
 .img-john img{
     width: 100%;
 }
-/* 
-.flex{
-    display: flex;
-    flex-direction: column;
-} */
 
 .circle{
     height: 100%;
@@ -322,19 +303,15 @@ main{
     text-align: center;
 }
 
-
-
-
-
 /*---------------
     FOOTER
 ----------------- */
 
-.container-foot{
+.container-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5.625rem;
+    height: 90px;
     background-color: #282828;
     position: fixed;
     left: 0;
@@ -344,47 +321,139 @@ main{
     
 }
 
+.footer-left{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    
+}
+.title-brano-foot{
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.brano-foot{
+    font-size: 10px;
+    color: #848484;
+    padding-left: 10px;
+    width: 80px
+}
 
+.footer-left img{
+    width: 43px;
+    margin-left: 10px;   
+}
 
+.icon-left-footer{
+    padding-left: 40px;
+    display: flex;
+}
 
+.fa-folder{
+    padding-left: 15px;
+}
 
+.center-top{
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+}
 
+.center-top a{
+    color: #fff;   
+}
 
+.fa-forward-step{
+    padding-right: 22px;
+}
 
+.fa-backward-step{
+    padding-left: 22px;
+}
 
+.fa-circle-play{
+    font-size: 24px;
+    padding: 0 32px;   
+}
 
+.icon-foot-center{
+    font-size: 16px;   
+}
 
+.footer-center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    flex-grow: 1;
+}
 
+.center-bottom{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;     
+}
 
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 65%;
+    background-color: #5a5a5a;
+}
 
+.progress{
+    position: relative;
+    height: 100%;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
+.time-player{
+    color: #fff;
+    font-size: 12px;   
+}
 
+.footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    width: 30%;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    width: 100%;
+}
 
+.progress-volume-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #5a5a5a;
+    margin-right: 10px;
+}
 
+.progress-volume{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-right i{
+    color: #fff;
+    font-size: 13px;
+}
 
 
 /*---------------
@@ -393,12 +462,12 @@ main{
 
 @media screen and (max-width: 992px) {
     .container-img-main{
-        flex-wrap: wrap; 
+     flex-wrap: wrap;
          
     }
 
     .blocco{
-        width: calc(100% / 4 - 15px);
+        width: calc(100% / 5);
     }
 
     .recent-album{
@@ -414,13 +483,7 @@ main{
         height: 80%;   
     }
 
-
-
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
     
@@ -430,7 +493,7 @@ main{
     }
     
     .blocco{
-        width: calc(100% / 2 - 15px);
+        width: calc(100% / 2 - 18px);
     }
 
     .recent-album{
@@ -438,10 +501,9 @@ main{
     }
 
     .album-john{
-        width: calc(200% / 2 - 15px); 
+        width: calc(200% / 2 - 18px); 
     }
 }
-
 
 @media screen and (max-width: 576px) {
        
@@ -512,9 +574,57 @@ main{
         left: 50px;
        }
     
-       main{
+    main{
         padding-left: 50px;
        }
     
+    .icon-left-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px 0 25px; 
+    }
+    
+    .fa-folder{
+        padding: 0;
+    }
+    
+    .footer-left img{
+        width: 30px;
+    }
+    .center-bottom{
+        gap: 6px;
+    }
 
+    .volume-bar{
+        gap: 8px;
+    }
+
+    .foot-right{
+        gap: 6px;
+    }
+}
+
+
+/*---------------
+      HOVER
+----------------- */
+
+a:hover{
+    color: #fff;
+}
+
+.name-brano:hover{
+color: #fff;
+text-decoration: underline;
+cursor: pointer;
+
+}
+
+.progress-bar:hover .progress{
+    background-color: #adff2f;
+}
+
+.progress-volume-bar:hover .progress-volume{
+    background-color: #adff2f;
 }
